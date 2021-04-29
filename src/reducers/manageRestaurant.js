@@ -1,5 +1,8 @@
-import cuid from 'cuid';
+import { combineReducers } from 'redux';
+import {restaurants} from './restaurants';
+import {reviews} from './reviews'
 
-export default function manageRestaurants(state, action) {
-
-}
+export default combineReducers({
+  restaurants,
+  reviews
+});
